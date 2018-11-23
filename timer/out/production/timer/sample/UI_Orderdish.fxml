@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1280.0" style="-fx-background-color: #E6E4E4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.OrderdishController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="900.0" prefWidth="302.0" style="-fx-background-color: #1E1B5E;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="978.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="159.0" prefWidth="302.0" style="-fx-background-color: #05347A;">
+               <children>
+                  <Label layoutX="31.0" layoutY="45.0" text="BUFFET" textFill="WHITE">
+                     <font>
+                        <Font name="Source Sans Pro Bold" size="70.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="32.0" text="me" textFill="WHITE">
+                     <font>
+                        <Font name="Source Sans Pro Bold" size="70.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <JFXButton focusTraversable="false" layoutY="159.0" prefHeight="55.0" prefWidth="301.0" style="-fx-background-color: #5B5A7E;" text="Order dish" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton focusTraversable="false" layoutY="214.0" onAction="#go_tabBill" prefHeight="55.0" prefWidth="301.0" style="-fx-background-color: #1E1B5E;" text="Order list" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton focusTraversable="false" layoutY="269.0" onAction="#go_tabTable" prefHeight="55.0" prefWidth="301.0" style="-fx-background-color: #1E1B5E;" text="Table" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton focusTraversable="false" layoutY="324.0" onAction="#go_tabDish" prefHeight="55.0" prefWidth="301.0" style="-fx-background-color: #1E1B5E;" text="Dish" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton focusTraversable="false" layoutY="379.0" onAction="#go_tabStorage" prefHeight="55.0" prefWidth="301.0" style="-fx-background-color: #1E1B5E;" text="Storage" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton focusTraversable="false" layoutY="434.0" onAction="#go_tabEmployee" prefHeight="55.0" prefWidth="301.0" style="-fx-background-color: #1E1B5E;" text="Employee" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton focusTraversable="false" layoutY="489.0" onAction="#go_tabMember" prefHeight="55.0" prefWidth="301.0" style="-fx-background-color: #1E1B5E;" text="Member" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton focusTraversable="false" layoutY="544.0" onAction="#go_tabReport" prefHeight="55.0" prefWidth="301.0" style="-fx-background-color: #1E1B5E;" text="Report" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton focusTraversable="false" layoutY="599.0" onAction="#go_tabInfo" prefHeight="55.0" prefWidth="301.0" style="-fx-background-color: #1E1B5E;" text="Info" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="19.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIconView fill="WHITE" glyphName="CUTLERY" layoutX="71.0" layoutY="359.0" size="22" />
+            <FontAwesomeIconView fill="WHITE" glyphName="LINE_CHART" layoutX="70.0" layoutY="586.0" size="22" wrappingWidth="25.14285659790039" />
+            <FontAwesomeIconView fill="WHITE" glyphName="USERS" layoutX="67.0" layoutY="470.0" size="22" />
+            <FontAwesomeIconView fill="WHITE" glyphName="BRIEFCASE" layoutX="71.0" layoutY="414.0" size="22" />
+            <FontAwesomeIconView fill="WHITE" glyphName="LIST_ALT" layoutX="69.0" layoutY="194.0" size="20" />
+            <FontAwesomeIconView fill="WHITE" glyphName="INFO_CIRCLE" layoutX="75.0" layoutY="634.0" size="22" wrappingWidth="25.14285659790039" />
+            <FontAwesomeIconView fill="WHITE" glyphName="ID_CARD" layoutX="69.0" layoutY="523.0" size="20" />
+            <FontAwesomeIconView fill="WHITE" glyphName="FILE" layoutX="71.0" layoutY="300.0" size="20" />
+            <FontAwesomeIconView fill="WHITE" glyphName="SHOPPING_CART" layoutX="67.0" layoutY="248.0" size="25" />
+            <AnchorPane layoutX="16.0" layoutY="779.0" prefHeight="117.0" prefWidth="260.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#05347a" height="84.0" layoutX="188.0" layoutY="17.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="87.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#05347a" height="84.0" layoutX="93.0" layoutY="17.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="87.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#05347a" height="84.0" layoutX="-6.0" layoutY="17.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="87.0" />
+                  <Label fx:id="secondTime0" alignment="CENTER" layoutX="192.0" layoutY="27.0" prefHeight="74.0" prefWidth="79.0" textFill="WHITE">
+                     <font>
+                        <Font size="51.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="minuteTime0" alignment="CENTER" layoutX="98.0" layoutY="27.0" prefHeight="74.0" prefWidth="78.0" textFill="WHITE">
+                     <font>
+                        <Font size="51.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="hourTime0" alignment="CENTER" layoutX="-1.0" layoutY="27.0" prefHeight="74.0" prefWidth="79.0" textFill="WHITE">
+                     <font>
+                        <Font size="51.0" />
+                     </font>
+                  </Label>
+                  <Text fill="WHITE" layoutX="18.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hours" />
+                  <Text fill="WHITE" layoutX="111.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minutes" />
+                  <Text fill="WHITE" layoutX="204.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seconds" />
+                  <Text fill="WHITE" layoutX="118.0" layoutY="6.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIME">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Text layoutX="349.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ORDER DISH" wrappingWidth="430.83837890625">
+         <font>
+            <Font name="System Bold" size="60.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="302.0" layoutY="114.0" prefHeight="788.0" prefWidth="979.0" style="-fx-background-color: #fff;">
+         <children>
+            <Text layoutX="48.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Table : ">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <ListView fx:id="listView" layoutX="58.0" layoutY="129.0" prefHeight="250.0" prefWidth="100.0" />
+            <Text layoutX="208.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <ScrollPane fx:id="menuPane" layoutX="208.0" layoutY="129.0" prefHeight="548.0" prefWidth="714.0">
+               <content>
+                  <AnchorPane prefHeight="467.0" prefWidth="707.0">
+                     <children>
+                        <HBox fx:id="headerHbox" layoutX="63.0" prefHeight="48.0" prefWidth="640.0" />
+                        <HBox layoutX="1.0" layoutY="54.0" prefHeight="7.0" prefWidth="706.0">
+                           <children>
+                              <Line endX="601.2929077148438" endY="-0.7071067690849304" startX="-100.0" strokeWidth="0.5" />
+                           </children>
+                        </HBox>
+                        <HBox fx:id="tryDish_hbox" layoutX="14.0" layoutY="61.0" prefHeight="473.0" prefWidth="689.0">
+                           <children>
+                              <VBox fx:id="tryDish_vbox1" prefHeight="395.0" prefWidth="316.0" />
+                              <VBox fx:id="tryDish_vbox2" prefHeight="395.0" prefWidth="167.0" />
+                              <VBox fx:id="tryDish_vbox3" prefHeight="395.0" prefWidth="148.0" />
+                              <VBox fx:id="tryDish_vbox4" prefHeight="395.0" prefWidth="129.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content></ScrollPane>
+            <JFXButton fx:id="sendBT" layoutX="825.0" layoutY="704.0" onAction="#send_order" prefWidth="97.0" style="-fx-background-color: #05347A;" text="Send" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="cancelBT" layoutX="719.0" layoutY="704.0" onAction="#cancel_order" prefWidth="97.0" style="-fx-background-color: #B8B8B8;" text="Cancel">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <ComboBox fx:id="input_member" layoutX="186.0" layoutY="27.0" prefHeight="31.0" prefWidth="379.0" promptText="Member name" />
+            <Text layoutX="48.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select member : ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

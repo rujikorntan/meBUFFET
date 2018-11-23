@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="600.0" style="-fx-background-color: #EFEFEF; -fx-border-color: #05347a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AlertController">
+   <children>
+      <Text fill="#05347a" layoutX="85.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please fill out the information again.">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Text fill="#a4a4a4" layoutX="283.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#a4a4a4" layoutX="312.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text=")">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="timeOut" layoutX="296.0" layoutY="98.0" text="0" textFill="#a4a4a4" />
+   </children>
+</AnchorPane>

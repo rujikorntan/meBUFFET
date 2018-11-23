@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="464.0" style="-fx-background-color: #EFEFEF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddTableController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#05347a" height="155.0" layoutX="-28.0" layoutY="-66.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="495.0" />
+      <Text fill="WHITE" layoutX="25.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Table" wrappingWidth="167.236328125">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <JFXTextArea fx:id="tb_name" labelFloat="true" layoutX="31.0" layoutY="127.0" prefHeight="43.0" prefWidth="402.0" promptText="Table name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextArea>
+      <JFXButton fx:id="cancelBT" layoutX="232.0" layoutY="370.0" onAction="#cancelBTgo" style="-fx-background-color: #BCBCBC;" text="CANCEL">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="comfirmBT" layoutX="330.0" layoutY="370.0" onAction="#comfirmBTgo" style="-fx-background-color: #05347A;" text="CONFIRM" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <ComboBox fx:id="status_box" layoutX="127.0" layoutY="284.0" prefWidth="150.0" />
+      <Text layoutX="38.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="capacity_box" layoutX="127.0" layoutY="220.0" prefWidth="150.0" />
+      <Text layoutX="38.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Capacity">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

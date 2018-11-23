@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1280.0" style="-fx-background-color: #EFEFEF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MemberUIController">
+   <children>
+      <JFXButton fx:id="editBT" layoutX="626.0" layoutY="48.0" onAction="#editTable" prefHeight="40.0" prefWidth="62.0" style="-fx-background-color: #6887B5;" text="Edit" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="900.0" prefWidth="302.0" style="-fx-background-color: #1E1B5E;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="978.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="159.0" prefWidth="302.0" style="-fx-background-color: #05347A;">
+               <children>
+                  <Label layoutX="31.0" layoutY="45.0" text="BUFFET" textFill="WHITE">
+                     <font>
+                        <Font name="Source Sans Pro Bold" size="70.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="32.0" text="me" textFill="WHITE">
+                     <font>
+                        <Font name="Source Sans Pro Bold" size="70.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <JFXButton layoutY="159.0" onAction="#go_tabOrderDish" prefHeight="55.0" prefWidth="301.0" style="-fx-background-color: #1E1B5E;" text="Order dish" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="214.0" onAction="#go_tabBill" prefHeight="55.0" prefWidth="301.0" style="-fx-background-color: #1E1B5E;" text="Order list" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="269.0" onAction="#go_tabTable" prefHeight="55.0" prefWidth="301.0" style="-fx-background-color: #1E1B5E;" text="Table" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="324.0" onAction="#go_tabDish" prefHeight="55.0" prefWidth="301.0" style="-fx-background-color: #1E1B5E;" text="Dish" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="379.0" onAction="#go_tabStorage" prefHeight="55.0" prefWidth="301.0" style="-fx-background-color: #1E1B5E;" text="Storage" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="434.0" onAction="#go_tabEmployee" prefHeight="55.0" prefWidth="301.0" style="-fx-background-color: #1E1B5E;" text="Employee" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="489.0" prefHeight="55.0" prefWidth="301.0" style="-fx-background-color: #5B5A7E;" text="Member" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="544.0" onAction="#go_tabReport" prefHeight="55.0" prefWidth="301.0" style="-fx-background-color: #1E1B5E;" text="Report" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="599.0" onAction="#go_tabInfo" prefHeight="55.0" prefWidth="301.0" style="-fx-background-color: #1E1B5E;" text="Info" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="19.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIconView fill="WHITE" glyphName="CUTLERY" layoutX="71.0" layoutY="359.0" size="22" />
+            <FontAwesomeIconView fill="WHITE" glyphName="LINE_CHART" layoutX="70.0" layoutY="586.0" size="22" wrappingWidth="25.14285659790039" />
+            <FontAwesomeIconView fill="WHITE" glyphName="USERS" layoutX="67.0" layoutY="470.0" size="22" />
+            <FontAwesomeIconView fill="WHITE" glyphName="BRIEFCASE" layoutX="71.0" layoutY="414.0" size="22" />
+            <FontAwesomeIconView fill="WHITE" glyphName="LIST_ALT" layoutX="69.0" layoutY="194.0" size="20" />
+            <FontAwesomeIconView fill="WHITE" glyphName="INFO_CIRCLE" layoutX="75.0" layoutY="634.0" size="22" wrappingWidth="25.14285659790039" />
+            <FontAwesomeIconView fill="WHITE" glyphName="ID_CARD" layoutX="69.0" layoutY="523.0" size="20" />
+            <FontAwesomeIconView fill="WHITE" glyphName="FILE" layoutX="71.0" layoutY="300.0" size="20" />
+            <FontAwesomeIconView fill="WHITE" glyphName="SHOPPING_CART" layoutX="67.0" layoutY="248.0" size="25" />
+            <AnchorPane layoutX="16.0" layoutY="779.0" prefHeight="117.0" prefWidth="260.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#05347a" height="84.0" layoutX="188.0" layoutY="17.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="87.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#05347a" height="84.0" layoutX="93.0" layoutY="17.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="87.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#05347a" height="84.0" layoutX="-6.0" layoutY="17.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="87.0" />
+                  <Label fx:id="secondTime0" alignment="CENTER" layoutX="192.0" layoutY="27.0" prefHeight="74.0" prefWidth="79.0" textFill="WHITE">
+                     <font>
+                        <Font size="51.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="minuteTime0" alignment="CENTER" layoutX="98.0" layoutY="27.0" prefHeight="74.0" prefWidth="78.0" textFill="WHITE">
+                     <font>
+                        <Font size="51.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="hourTime0" alignment="CENTER" layoutX="-1.0" layoutY="27.0" prefHeight="74.0" prefWidth="79.0" textFill="WHITE">
+                     <font>
+                        <Font size="51.0" />
+                     </font>
+                  </Label>
+                  <Text fill="WHITE" layoutX="18.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hours" />
+                  <Text fill="WHITE" layoutX="111.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minutes" />
+                  <Text fill="WHITE" layoutX="204.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seconds" />
+                  <Text fill="WHITE" layoutX="118.0" layoutY="6.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIME">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Text layoutX="349.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEMBER">
+         <font>
+            <Font name="System Bold" size="60.0" />
+         </font>
+      </Text>
+      <Pane layoutX="347.0" layoutY="102.0" prefHeight="761.0" prefWidth="913.0" style="-fx-background-color: #EFEFEF;">
+         <children>
+            <JFXButton fx:id="confirmEditButton" layoutX="805.0" layoutY="717.0" onAction="#confirmEdit" prefHeight="44.0" prefWidth="97.0" style="-fx-background-color: #05347A;" text="Save" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="cancelEditButton" layoutX="699.0" layoutY="717.0" onAction="#cancelEdit" prefHeight="44.0" prefWidth="97.0" style="-fx-background-color: #B8B8B8;" text="Cancel">
+               <font>
+                  <Font size="20.0" />
+               </font></JFXButton>
+            <TableView fx:id="memberTable" layoutX="11.0" layoutY="14.0" prefHeight="682.0" prefWidth="891.0">
+              <columns>
+                <TableColumn fx:id="codeCol" onEditCommit="#onCodeChanged" prefWidth="120.0" resizable="false" text="Code" />
+                <TableColumn fx:id="nameCol" minWidth="0.0" onEditCommit="#onNameChanged" prefWidth="275.0" resizable="false" text="Name" />
+                  <TableColumn fx:id="telCol" onEditCommit="#onTelChanged" prefWidth="200.0" resizable="false" text="Phone number" />
+                  <TableColumn fx:id="birthCol" onEditCommit="#onBirthChanged" prefWidth="150.0" resizable="false" text="Birthday" />
+                  <TableColumn fx:id="enrollCol" onEditCommit="#onEnrollChanged" prefWidth="150.0" resizable="false" text="Enroll date" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <JFXButton fx:id="addButton" layoutX="1181.0" layoutY="48.0" onAction="#popupAddMember" prefHeight="44.0" prefWidth="65.0" ripplerFill="WHITE" style="-fx-background-color: #063E9B;" text="Add" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="removeButton" layoutX="1068.0" layoutY="48.0" onAction="#removeMember" prefHeight="44.0" prefWidth="106.0" style="-fx-background-color: #D10D0D;" text="Remove" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="503.0" style="-fx-background-color: #E8E8E8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.loginController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="451.0" prefWidth="471.0" style="-fx-background-color: #E8E8E8;">
+         <children>
+            <JFXTextField fx:id="usernameLogin" labelFloat="true" layoutX="91.0" layoutY="183.0" prefHeight="31.0" prefWidth="289.0" promptText="Username" />
+            <JFXPasswordField fx:id="pwLogin" labelFloat="true" layoutX="91.0" layoutY="240.0" prefHeight="44.0" prefWidth="289.0" promptText="Password" />
+            <JFXButton fx:id="loginBT" layoutX="160.0" layoutY="335.0" onAction="#goTologin" prefHeight="44.0" prefWidth="152.0" style="-fx-background-color: #05347A;" text="LOG IN" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="130.0" layoutY="48.0" text="BUFFET" textFill="#05347a">
+               <font>
+                  <Font name="Source Sans Pro Bold" size="70.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#bfbfbf" height="5.0" offsetX="6.0" radius="2.0" width="5.0" />
+               </effect>
+            </Label>
+            <Label layoutX="131.0" layoutY="3.0" text="me" textFill="#05347a">
+               <font>
+                  <Font name="Source Sans Pro Bold" size="70.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#bfbfbf" height="5.0" offsetX="6.0" radius="2.0" width="5.0" />
+               </effect>
+            </Label>
+            <JFXButton fx:id="cancelBT" layoutX="160.0" layoutY="393.0" onAction="#cancelLogin" prefHeight="44.0" prefWidth="152.0" style="-fx-background-color: #B8B8B8;" text="Cancel">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <Text fx:id="invalidLogin" fill="RED" layoutX="224.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invalid username or password" visible="false">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
